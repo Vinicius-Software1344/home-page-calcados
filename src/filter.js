@@ -5,7 +5,7 @@ button.addEventListener('click', filter)
 const input = document.querySelector('#search-container input') 
 
 function getInputContent() {
-    return input.value
+    return input.value.toLowerCase()
 }
 
 let results = []
@@ -15,7 +15,6 @@ function filter() {
     results = []
 
     const search = getInputContent()
-    search.toLowerCase()
 
     if (search != '') {
         for (const product of cartoes){

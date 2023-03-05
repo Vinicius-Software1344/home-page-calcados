@@ -74,33 +74,6 @@ const html = {
     }
 }
 
-// const input = document.querySelector('#search-container input')
-// const main = document.querySelectorAll('main')
-
-// function filtro() {
-//     if(input.value != "") {
-//         for (let cartao of main) {
-//                 let titulo = cartao.querySelector('div .descricao-do-produto p')
-
-//                 titulo = titulo.textContent.toLowerCase()
-
-//                 let textoFiltrado = input.value.toLowerCase()
-
-//             if (titulo.includes(textoFiltrado) === false) {
-//                 cartao.style.display = "none"
-//             } else {
-//                 cartao.style.display = "block"
-//             }
-//         }
-//     } else {
-        
-//     }
-// }
-
-// input.addEventListener('input', filtro)
-
-
-
 for (const cartao of cartoes) {
     html.addProduto(cartao.imagem, cartao.descricao, cartao.preco)
 }
