@@ -5,7 +5,7 @@ button.addEventListener('click', filter)
 const input = document.querySelector('#search-container input') 
 
 function getInputContent() {
-    return input.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
+    return input.value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
 }
 
 let results = []
